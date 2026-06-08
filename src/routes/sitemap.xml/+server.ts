@@ -15,21 +15,6 @@ export async function GET() {
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
       </url>
-      <url>
-        <loc>https://eavesdrop.fm/about</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-      </url>
-      <url>
-        <loc>https://eavesdrop.fm/faq</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-      </url>
-      <url>
-        <loc>https://eavesdrop.fm/stats</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-      </url>
     </urlset>`.trim(),
 		{
 			headers: {

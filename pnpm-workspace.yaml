@@ -1,0 +1,18 @@
+allowBuilds:
+  esbuild: true
+
+dedupePeers: true
+
+enablePrePostScripts: false
+
+hoistPattern: []
+
+ignorePatchFailures: false
+
+minimumReleaseAgeStrict: true
+
+savePrefix: ''
+
+trustPolicy: 'no-downgrade'
+
+trustPolicyIgnoreAfter: 10080
