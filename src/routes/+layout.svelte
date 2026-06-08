@@ -1,18 +1,9 @@
 <script lang="ts">
-	import Header from '$lib/components/Header.svelte';
-	import jsIsEnabled from '$lib/stores/jsIsEnabled';
-	import state from '$lib/stores/state';
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		$jsIsEnabled = true;
-	});
+	let { children } = $props();
 </script>
 
-<Header jsIsEnabled={$jsIsEnabled} isMinimised={!!$state?.token} />
+<svelte:head>
+	<title>eavesdrop.fm | submit your Plex listens with ListenBrainz</title>
+</svelte:head>
 
-<slot />
-
-<style lang="scss" global>
-	@import '../app.scss';
-</style>
+{@render children()}
